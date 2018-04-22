@@ -1,0 +1,124 @@
+1.
+
+jiangjojo
+Jiang0317
+
+2878820271@qq.com
+____________________
+2.
+
+jiangjo123
+Ff3861804
+
+jiangjo_123@163.com
+
+
+
+
+
+
+J@J-PC MINGW64 ~/Desktop/Git
+$ git config --global user.name 'jiangjojo'   ---设置用户名
+
+J@J-PC MINGW64 ~/Desktop/Git
+$ git config --global user.email '2878820271@qq.com'---设置邮箱
+
+J@J-PC MINGW64 ~/Desktop/Git   ---初始化，创建仓库
+$
+git init --初始化
+
+
+J@J-PC MINGW64 ~/Desktop/Git/Test2 (master)
+$ git add demo1.java   --从工作区域添加到暂存区域（添加文件）
+
+J@J-PC MINGW64 ~/Desktop/Git/Test2 (master)
+$ git status  --查看状态
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   demo.java
+        new file:   demo1.java
+
+
+J@J-PC MINGW64 ~/Desktop/Git/Test2 (master)
+$ git commit -m 'add java file' --从暂存区域添加到库中
+
+
+
+J@J-PC MINGW64 ~/Desktop/Git/Test2 (master)
+$ vim demo.java  --修改文件
+
+J@J-PC MINGW64 ~/Desktop/Git/Test2 (master)
+$ cat demo.java  --查看文件
+Hello World!!!
+
+
+
+J@J-PC MINGW64 ~/Desktop/Git/Test2 (master)
+$ rm -rf demo.java --删除文件
+
+J@J-PC MINGW64 ~/Desktop/Git/Test2 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    demo.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+J@J-PC MINGW64 ~/Desktop/Git/Test2 (master)
+$ git rm demo.java --删除文件
+rm 'demo.java'
+
+J@J-PC MINGW64 ~/Desktop/Git/Test2 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    demo.java
+
+
+J@J-PC MINGW64 ~/Desktop/Git/Test2 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    demo.java
+
+
+J@J-PC MINGW64 ~/Desktop/Git/Test2 (master)
+$ git commit -m '删除干净了'
+[master 6ddd0f7] 删除干净了
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 demo.java
+
+J@J-PC MINGW64 ~/Desktop/Git/Test2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+************************************************* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+$ git config --global user.name 'jiangjojo'   ---设置用户名      
+$ git config --global user.email '2878820271@qq.com'---设置邮箱                                                *  
+$ git init ---初始化，创建仓库              
+$ touch 文件名 --增加文件
+$ git add demo1.java   --从工作区域添加到暂存区域（添加文件）
+$ git commit -m 'add java file' --从暂存区域添加到库中  
+$ vim demo.java  --修改文件                                        
+$ rm -rf demo.java --删除文件  
+$ git rm demo.java --删除文件                                              
+$ git clone [远程仓库地址]  --克隆远程仓库到本地
+
+                 
+                                               
+***************************************************************************************************************                                                
+
+
